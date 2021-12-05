@@ -16,6 +16,19 @@ const darkDropdown = document.getElementById('navbarDropdown');
 const darkCards = document.getElementById('card');
 const darkTitle = document.getElementById('title');
 
+/*cards enumeradas*/
+const darkCardOne = document.getElementById('card-one');
+const darkCardTwo = document.getElementById('card-two');
+const darkCardThree = document.getElementById('card-three');
+const darkCardFour = document.getElementById('card-four');
+const darkCardFive = document.getElementById('card-five');
+const darkCardSix = document.getElementById('card-six');
+const darkCardSeven = document.getElementById('card-seven');
+const darkCardEight = document.getElementById('card-eight');
+
+
+
+
 btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('darkGray'); //toggle the HTML body the class 'dark'
     btnSwitch.classList.toggle('activated');//toggle the HTML button with the id='switch' with the class 'active'
@@ -31,4 +44,14 @@ btnSwitch.addEventListener('click', () => {
     darkTitle.classList.toggle('darkGray');
     darkDropdown.classList.remove('btn-light');
     darkDropdown.classList.toggle('darkGray');
+
+    /*estilos Darkmode para las cards*/
+    darkCardOne.classList.toggle('darkGray');
+    darkCardTwo.classList.toggle('darkGray');
+    darkCardThree.classList.toggle('darkGray');
+    darkCardFour.classList.toggle('darkGray');
+    darkCardFive.classList.toggle('darkGray');
+    darkCardSix.classList.toggle('darkGray');
+    darkCardSeven.classList.toggle('darkGray');
+    darkCardEight.classList.toggle('darkGray');
 });

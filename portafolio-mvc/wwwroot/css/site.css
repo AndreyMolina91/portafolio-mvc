@@ -126,6 +126,62 @@ a:hover {
     transition: .2s ease all;
 }
 
+#card-one.darkGray {
+    background: #2d3237;
+    color: white;
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
+#card-two.darkGray {
+    background: #2d3237;
+    color: white;
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
+#card-three.darkGray {
+    background: #2d3237;
+    color: white;
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
+#card-four.darkGray {
+    background: #2d3237;
+    color: white;
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
+#card-five.darkGray {
+    background: #2d3237;
+    color: white;
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
+#card-six.darkGray {
+    background: #2d3237;
+    color: white;
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
+#card-seven.darkGray {
+    background: #2d3237;
+    color: white;
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
+#card-eight.darkGray {
+    background: #2d3237;
+    color: white;
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
 
 /*====================DARK MODE THEME END=========================*/
 
