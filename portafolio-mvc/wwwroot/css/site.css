@@ -4,10 +4,12 @@
     color: #111B54;
     font-family: 'Comfortaa', cursive;
     font-family: 'Poppins', sans-serif;
+    transition: .3s ease all;
 }
 
 .menu a{
     text-decoration: none;
+    font-weight: 300;
 }
 
 a:hover {
@@ -32,14 +34,17 @@ a:hover {
 
 .bg-style-primary {
     background-color: #111B54;
+    transition: .3s ease all;
 }
 
 .bg-mix {
     background: linear-gradient(180deg, white 50%, rgb(212, 211, 211) 0);
+    transition: .3s ease all;
 }
 
 .bg-gray {
     background: rgb(212, 211, 211);
+    transition: .3s ease all;
 }
 
 #logo {
@@ -50,7 +55,13 @@ a:hover {
 #sidebar-container {
     min-height: 100vh;
     background-color: #111B54;
+    transition: .3s ease all;
 }
+
+    #sidebar-container .active {
+        background: #040404;
+        transition: .3s ease all;
+    }
 
     #sidebar-container .logo {
         padding: .875rem 1.25rem;
@@ -79,4 +90,114 @@ a:hover {
     height: 100vh;
     padding-bottom: 5rem;
 }
+
+/*====================DARK MODE THEME START=========================*/
+
+.darkGray {
+    background: #2d3237;
+    transition: .2s ease all;
+}
+
+.darkTheme {
+    background: #212529;
+    transition: .2s ease all;
+}
+
+#sidebar-container.darkTheme {
+    background: #181a1d;
+    transition: 1s ease all;
+}
+
+#card.darkTheme {
+    background: #1e2226fd;
+    transition: .2s ease all;
+}
+
+#navbarDropdown.darkGray {
+    background: #24282cf2;
+    color: white;
+    transition: .2s ease all;
+    border: 1px solid #2b2f34ff;
+    border-radius: 10px;
+}
+
+#title.darkGray h1 {
+    color: white;
+    transition: .2s ease all;
+}
+
+
+/*====================DARK MODE THEME END=========================*/
+
+
+/*Estilos para Dark Mode*/
+.switch {
+    background: #02002b;
+    border-radius: 1000px;
+    border: 1px solid white;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    color: #02002b;
+    transition: .3s ease all;
+}
+.activated {
+    background: #e1ef80c7; /*Amarillo*/
+    border-radius: 1000px;
+    border: 1px solid white;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    color: #ebebeb;
+    transition: .3s ease all;
+}
+
+/*Boton Switch circular*/
+.switch::after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: #ebebeb;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+    margin-top:1px;
+}
+.switch.activated::after {
+    left: unset;
+    right: 0;
+    transition: .3s ease all;
+}
+
+/*iconos*/
+.switch span {
+    width: 25px;
+    height: 20px;
+    line-height: 30px;
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 6px;
+    transition: .3s ease all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

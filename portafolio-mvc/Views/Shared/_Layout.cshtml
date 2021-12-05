@@ -22,29 +22,35 @@
     <div class="d-flex">
 
         <!--Sidebar-->
-        <div id="sidebar-container" class="">
-            <div class="row justify-content-start">
+        <div id="sidebar-container">
+            <div class="row w-100 p-0">
 
                 <div id="logo" class="col-6 align-self-end">
-                    <img class="m-3" src="~/imgs/logo.png" id="logo" />
+                     <img class="m-3" src="~/imgs/logo.png" id="logo" />   
+                </div>
+                <div class="col-6 d-flex-fluid align-self-end m-auto">
+                    <button class="switch" id="btnSwitch">
+                            <span><i class="bi bi-sun-fill"></i></span>
+                            <span><i class="bi bi-moon-stars-fill"></i></span>                                     
+                    </button>
                 </div>
             </div>
 
 
 
             <div class="menu">
-                <a class="text-light d-block p-3" href="#"><i class="bi bi-house me-2 lead"></i>About me!</a>
+                <a class="text-light d-block p-3" href="#"><i class="bi bi-house me-2 lead"></i>Experiencia</a>
                 <a class="text-light d-block p-3" href="#"><i class="bi bi-box-seam me-2 lead"></i>Front-end</a>
                 <a class="text-light d-block p-3" href="#"><i class="bi bi-code-slash me-2 lead"></i>Back-end</a>
                 <a class="text-light d-block p-3" href="#"><i class="bi bi-github me-2 lead"></i>Portafolio</a>
-                <a class="text-light d-block p-3" href="#"><i class="bi bi-linkedin me-2 lead"></i>Curriculo</a>
+                <a class="text-light d-block p-3" href="#"><i class="bi bi-linkedin me-2 lead"></i>Curriculo</a>     
             </div>
         </div>
 
 
         <!--Contenedor del cuerpo de la página-->
-        <div class="w-100">
-            <nav class="navbar shadow p-3 mb-5 bg-body rounded navbar-expand-lg navbar-light bg-light">
+        <div class="w-100" id="mainContainer">
+            <nav class="navbar shadow p-3 rounded navbar-expand-lg navbar-light bg-light" id="navbarDark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -55,7 +61,8 @@
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn position-absolute btn-search" type="submit">
                             <i class="bi bi-search"></i>
-                        </button>
+                        </button>            
+                
                     </form>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -63,6 +70,7 @@
                             <li class="nav-item dropdown">
                                 <a class="btn btn-light btn-sm dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                   
                                     <img src="~/imgs/avatar.jpeg" class="avatar rounded-circle me-2" alt="">
                                     Contácto directo
                                 </a>
@@ -81,7 +89,7 @@
             </nav>
 
 
-            <div id="content">
+            <div id="content">                
                 <main role="main" class="pb-5">
                     @RenderBody()
                 </main>
